@@ -17,6 +17,6 @@ def read(path):
     list
         List of rows as dicts
     """
-    with open(path, "r") as file:
-        jobs = csv.DictReader(file)
-        return list(jobs)
+    file = open(path, "r")
+    jobs = csv.DictReader(file)
+    return list(jobs)
